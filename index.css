@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background:hsl(0, 0%, 98%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+    margin-top: 30px;
+}
+
+header #head h1{
+    color: black;
+    font-family: arial;
+}
+
+
+
+header #head-2{
+    color: rgb(100,100,100);
+    width: 50%;
+    font-family: arial;
+    margin-left: 25%;
+    margin-top: -10px;
+}
+
+header #head-2 p{
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    height: auto;
+    box-shadow: 0 6px 17px hsla(229, 6%, 66%, 0.4);
+    flex-basis: 25%;
+    margin-top: 30px;
+}
+
+.card h2{
+    font-size: 18px;
+    font-family: verdana;
+    color: rgb(60,60,60);
+}
+
+.card p{
+    font-size: 15px;
+    color: rgb(100,100,100);
+}
+.sub-container .card{
+    margin-top: 30px;
+    width: 50%;
+}
+
+.card-1{
+    border-top:5px solid hsl(180, 62%, 55%);
+}
+
+.card-2{
+    border-top:5px solid hsl(0, 78%, 62%);
+}
+
+.card-3{
+    border-top:5px solid hsl(34, 97%, 64%);
+}
+
+.card-4{
+    border-top:5px solid hsl(212, 86%, 64%);
+}
+
+.img-container{
+    float: right;
+}
+
+footer{
+    width: 100%;
+    padding: 10px;
+    background: rgb(230,230,230);
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(60,60,60);
+}
+
+@media (max-width:500px){
+    header{
+        text-align: center;
+        margin-top: 20px;
+        text-align: start;
+    }
+    header h1{
+        font-size: 20px;
+    }
+
+    header #head-2{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .sub-container {
+        width: 100%;
+    }
+
+    .sub-container .card{
+        width: 90%;
+    }
+}
